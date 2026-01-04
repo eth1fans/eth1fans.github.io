@@ -2,100 +2,85 @@
 title: Home
 layout: home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "A comprehensive guide to Web3 security best practices, vulnerabilities, and solutions for developers building decentralized applications."
 permalink: /
 ---
 
-# Focus on writing good documentation
+# Web3 Security Guide
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+A comprehensive resource for understanding and implementing security best practices in Web3 development. Learn about common vulnerabilities, attack vectors, and how to build secure decentralized applications.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get Started](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View on GitHub](https://github.com/eth1fans/eth1fans.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 {: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
+> **Important**: This guide is continuously updated with the latest Web3 security research and best practices. Always verify information and stay updated with the latest security advisories.
 
-Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
+Web3 security is critical for protecting user funds and ensuring the integrity of decentralized applications. This guide covers essential security topics including smart contract vulnerabilities, wallet security, DeFi risks, and best practices for building secure dApps.
 
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *[customize]* the theme to make them look completely different!
-
-Browse the docs to learn more about how to use this theme.
+Whether you're a developer, auditor, or security researcher, this resource provides practical knowledge to help you build and maintain secure Web3 applications.
 
 ## Getting started
 
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
+Welcome to the Web3 Security Guide! This resource is designed to help developers, auditors, and security researchers understand and mitigate security risks in Web3 applications.
+
+### What you'll learn
+
+- **Smart Contract Security**: Common vulnerabilities like reentrancy, overflow/underflow, and access control issues
+- **Wallet Security**: Best practices for securing cryptocurrency wallets and private keys
+- **DeFi Security**: Understanding risks in decentralized finance protocols
+- **Audit Best Practices**: How to conduct security audits and code reviews
+- **Attack Vectors**: Real-world examples of Web3 attacks and how they were executed
+- **Security Tools**: Tools and resources for testing and securing your applications
+
+### How to use this guide
+
+Navigate through the documentation using the sidebar menu. Each section covers specific security topics with practical examples and code snippets. Whether you're building a new dApp or auditing existing code, this guide provides the knowledge you need.
 
 {: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+This guide is community-driven and continuously updated. Contributions and feedback are welcome!
 
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
+## About this project
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+The Web3 Security Guide is a community-driven resource dedicated to improving security practices in the Web3 ecosystem. Our goal is to help developers build more secure decentralized applications and protect user funds.
 
-More specifically, the created site:
+### Why Web3 Security Matters
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
-
-Other than that, you're free to customize sites that you create with the template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-{: .note }
-See the theme [README][Just the Docs README] for how to use the theme as a gem without creating a new site.
-
-## About the project
-
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](https://patrickmarsceill.com) and the [Just the Docs contributors](https://github.com/just-the-docs/just-the-docs/graphs/contributors).
-
-Just the Docs is currently primarily maintained by [Matt Wang](https://mattx.wang).
-
-### License
-
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+With billions of dollars locked in smart contracts and DeFi protocols, security is paramount. A single vulnerability can lead to catastrophic losses. This guide aims to educate developers about common pitfalls and best practices.
 
 ### Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+We welcome contributions! Whether it's adding new content, fixing errors, or improving existing documentation, your help makes this resource better for everyone.
 
-#### Thank you to the contributors of Just the Docs!
+To contribute:
+1. Fork the repository
+2. Create a branch for your changes
+3. Submit a pull request with a clear description
 
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"></a>
-  </li>
-{% endfor %}
-</ul>
+### Resources
 
-### Code of Conduct
+- [GitHub Repository](https://github.com/eth1fans/eth1fans.github.io)
+- [Report Issues](https://github.com/eth1fans/eth1fans.github.io/issues)
+- [Security Advisories](https://github.com/eth1fans/eth1fans.github.io/security/advisories)
 
-Just the Docs is committed to fostering a welcoming community.
+### Disclaimer
 
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
+This guide is for educational purposes only. Always conduct thorough security audits and testing before deploying smart contracts or handling real funds. The authors and contributors are not responsible for any losses resulting from the use of this information.
 
-----
+---
 
-[^1]: The [source file for this page] uses all three markup languages.
+## Quick Links
 
-[^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+- [Smart Contract Vulnerabilities](/docs/smart-contracts/vulnerabilities)
+- [Security Best Practices](/docs/best-practices)
+- [Audit Checklist](/docs/audit-checklist)
+- [Common Attack Vectors](/docs/attack-vectors)
+- [Security Tools](/docs/tools)
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[customize]: {% link docs/customization.md %}
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+---
+
+*Last updated: {{ "now" | date: "%B %Y" }}*
