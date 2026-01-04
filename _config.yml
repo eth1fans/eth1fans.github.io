@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Web3 Security Guide
-description: A comprehensive guide to Web3 security best practices, vulnerabilities, and solutions
+description: A comprehensive guide to Web3 security best practices, vulnerabilities, and solutions for developers
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://eth1fans.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: eth1fans/eth1fans.github.io # for github-metadata

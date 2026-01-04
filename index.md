@@ -30,12 +30,12 @@ Welcome to the Web3 Security Guide! This resource is designed to help developers
 
 ### What you'll learn
 
-- **Smart Contract Security**: Common vulnerabilities like reentrancy, overflow/underflow, and access control issues
-- **Wallet Security**: Best practices for securing cryptocurrency wallets and private keys
-- **DeFi Security**: Understanding risks in decentralized finance protocols
-- **Audit Best Practices**: How to conduct security audits and code reviews
-- **Attack Vectors**: Real-world examples of Web3 attacks and how they were executed
-- **Security Tools**: Tools and resources for testing and securing your applications
+- **🔐 Smart Contract Security**: Common vulnerabilities like reentrancy, overflow/underflow, and access control issues
+- **💼 Wallet Security**: Best practices for securing cryptocurrency wallets and private keys
+- **🏦 DeFi Security**: Understanding risks in decentralized finance protocols
+- **🔍 Audit Best Practices**: How to conduct security audits and code reviews
+- **⚔️ Attack Vectors**: Real-world examples of Web3 attacks and how they were executed
+- **🛠️ Security Tools**: Tools and resources for testing and securing your applications
 
 ### How to use this guide
 
@@ -57,9 +57,9 @@ With billions of dollars locked in smart contracts and DeFi protocols, security 
 We welcome contributions! Whether it's adding new content, fixing errors, or improving existing documentation, your help makes this resource better for everyone.
 
 To contribute:
-1. Fork the repository
-2. Create a branch for your changes
-3. Submit a pull request with a clear description
+1. 🍴 Fork the repository
+2. 🌿 Create a branch for your changes
+3. 📝 Submit a pull request with a clear description
 
 ### Resources
 
@@ -75,11 +75,11 @@ This guide is for educational purposes only. Always conduct thorough security au
 
 ## Quick Links
 
-- [Smart Contract Vulnerabilities](/docs/smart-contracts/vulnerabilities)
-- [Security Best Practices](/docs/best-practices)
-- [Audit Checklist](/docs/audit-checklist)
-- [Common Attack Vectors](/docs/attack-vectors)
-- [Security Tools](/docs/tools)
+- [🔓 Smart Contract Vulnerabilities](/docs/smart-contracts/vulnerabilities)
+- [✅ Security Best Practices](/docs/best-practices)
+- [📋 Audit Checklist](/docs/audit-checklist)
+- [⚔️ Common Attack Vectors](/docs/attack-vectors)
+- [🛠️ Security Tools](/docs/tools)
 
 ---
 
