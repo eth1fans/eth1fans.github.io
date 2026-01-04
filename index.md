@@ -75,11 +75,11 @@ This guide is for educational purposes only. Always conduct thorough security au
 
 ## Quick Links
 
-- [🔓 Smart Contract Vulnerabilities](/docs/smart-contracts/vulnerabilities)
-- [✅ Security Best Practices](/docs/smart-contracts/best-practices)
-- [📋 Audit Checklist](/docs/auditing/checklist)
-- [⚔️ Common Attack Vectors](/docs/attack-vectors)
-- [🛠️ Security Tools](/docs/tools)
+- [🔓 Smart Contract Vulnerabilities]({% link docs/smart-contracts/vulnerabilities.md %})
+- [✅ Security Best Practices]({% link docs/smart-contracts/best-practices.md %})
+- [📋 Audit Checklist]({% link docs/auditing/checklist.md %})
+- [⚔️ Common Attack Vectors]({% link docs/attack-vectors/index.md %})
+- [🛠️ Security Tools]({% link docs/tools/index.md %})
 
 ---
 
