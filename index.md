@@ -6,7 +6,7 @@ description: "A comprehensive guide to Web3 security best practices, vulnerabili
 permalink: /
 ---
 
-# Web3 Security Guide
+# Web3 Security
 {: .fs-9 }
 
 A comprehensive resource for understanding and implementing security best practices in Web3 development. Learn about common vulnerabilities, attack vectors, and how to build secure decentralized applications.

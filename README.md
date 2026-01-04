@@ -1,4 +1,4 @@
-# Web3 Security Guide
+# Web3 Security
 
 A comprehensive guide to Web3 security best practices, vulnerabilities, and solutions for developers building decentralized applications.
 
