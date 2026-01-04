@@ -1,71 +1,70 @@
 ---
-title: Static Analysis Tools
-parent: Security Tools
+title: 静态分析工具
+parent: 安全工具
 nav_order: 1
 ---
 
-# Static Analysis Tools
+# 静态分析工具
 
-Static analysis tools examine code without executing it to find potential vulnerabilities.
+静态分析工具在不执行代码的情况下检查代码，以发现潜在的漏洞。
 
 ## Slither
 
-Slither is a static analysis framework for Solidity.
+Slither 是 Solidity 的静态分析框架。
 
-### Installation
+### 安装
 
 ```bash
 pip3 install slither-analyzer
 ```
 
-### Usage
+### 使用
 
 ```bash
 slither contract.sol
 ```
 
-### Features
+### 功能
 
-- Detects 100+ vulnerability types
-- Fast analysis
-- Custom detectors
-- Printer framework
+- 检测 100+ 种漏洞类型
+- 快速分析
+- 自定义检测器
+- 打印框架
 
 ## Mythril
 
-Mythril is a security analysis tool for EVM bytecode.
+Mythril 是 EVM 字节码的安全分析工具。
 
-### Installation
+### 安装
 
 ```bash
 pip3 install mythril
 ```
 
-### Usage
+### 使用
 
 ```bash
 myth analyze contract.sol
 ```
 
-### Features
+### 功能
 
-- Symbolic execution
-- Taint analysis
-- Control flow analysis
-- Multiple vulnerability detectors
+- 符号执行
+- 污点分析
+- 控制流分析
+- 多种漏洞检测器
 
-## Other Tools
+## 其他工具
 
-- **Securify**: Automated security scanner
-- **Manticore**: Symbolic execution tool
-- **Echidna**: Fuzzing framework
-- **Oyente**: Static analysis tool
+- **Securify**：自动化安全扫描器
+- **Manticore**：符号执行工具
+- **Echidna**：模糊测试框架
+- **Oyente**：静态分析工具
 
-## Best Practices
+## 最佳实践
 
-- Run multiple tools for comprehensive coverage
-- Review all findings carefully
-- Fix high-severity issues first
-- Use tools in CI/CD pipeline
-- Keep tools updated
-
+- 运行多个工具以获得全面覆盖
+- 仔细审查所有发现
+- 首先修复高严重性问题
+- 在 CI/CD 管道中使用工具
+- 保持工具更新

@@ -1,48 +1,48 @@
 ---
-title: Oracle Security
-parent: DeFi Security
+title: 预言机安全
+parent: DeFi 安全
 nav_order: 2
 ---
 
-# Oracle Security
+# 预言机安全
 
-Oracles provide external data to smart contracts. Securing oracle data is critical for DeFi protocols.
+预言机为智能合约提供外部数据。保护预言机数据对 DeFi 协议至关重要。
 
-## Oracle Risks
+## 预言机风险
 
-- **Price manipulation**: Attackers manipulate price feeds
-- **Single point of failure**: Relying on one oracle
-- **Stale data**: Using outdated information
-- **Front-running**: Exploiting oracle update delays
+- **价格操纵**：攻击者操纵价格源
+- **单点故障**：依赖单一预言机
+- **过时数据**：使用过时的信息
+- **抢跑**：利用预言机更新延迟
 
-## Best Practices
+## 最佳实践
 
-### Use Multiple Oracles
+### 使用多个预言机
 
-- Aggregate data from multiple sources
-- Use median or weighted average
-- Implement outlier detection
+- 聚合多个来源的数据
+- 使用中位数或加权平均
+- 实现异常值检测
 
-### Time-Weighted Average Prices (TWAP)
+### 时间加权平均价格（TWAP）
 
-- Reduces impact of short-term manipulation
-- More expensive but more secure
-- Suitable for less time-sensitive operations
+- 减少短期操纵的影响
+- 成本更高但更安全
+- 适用于时间敏感度较低的操作
 
-### Circuit Breakers
+### 熔断机制
 
-- Pause operations if price changes too rapidly
-- Implement maximum price change limits
-- Add time delays for critical operations
+- 如果价格变化过快则暂停操作
+- 实现最大价格变化限制
+- 为关键操作添加时间延迟
 
-## Popular Oracle Solutions
+## 热门预言机解决方案
 
-- Chainlink: Decentralized oracle network
-- Band Protocol: Cross-chain oracle
-- Uniswap V3 TWAP: On-chain price feeds
-- Compound Open Price Feed: Community-maintained
+- Chainlink：去中心化预言机网络
+- Band Protocol：跨链预言机
+- Uniswap V3 TWAP：链上价格源
+- Compound Open Price Feed：社区维护
 
-## Implementation Example
+## 实现示例
 
 ```solidity
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
@@ -67,4 +67,3 @@ contract PriceConsumer {
     }
 }
 ```
-

@@ -1,54 +1,53 @@
 ---
-title: Flash Loan Attacks
-parent: DeFi Security
+title: 闪电贷攻击
+parent: DeFi 安全
 nav_order: 1
 ---
 
-# Flash Loan Attacks
+# 闪电贷攻击
 
-Flash loans allow borrowing large amounts without collateral, but can be exploited for attacks.
+闪电贷允许无抵押借入大额资金，但可能被利用进行攻击。
 
-## What are Flash Loans?
+## 什么是闪电贷？
 
-Flash loans are uncollateralized loans that must be repaid within the same transaction.
+闪电贷是无抵押贷款，必须在同一笔交易内偿还。
 
-## How Flash Loan Attacks Work
+## 闪电贷攻击如何工作
 
-1. Attacker borrows large amount via flash loan
-2. Uses funds to manipulate protocol (e.g., price oracle)
-3. Executes profitable trade
-4. Repays flash loan
-5. Keeps profit
+1. 攻击者通过闪电贷借入大额资金
+2. 使用资金操纵协议（例如，价格预言机）
+3. 执行有利可图的交易
+4. 偿还闪电贷
+5. 保留利润
 
-## Real-World Examples
+## 真实案例
 
-- bZx protocol attacks (2020)
-- Harvest Finance exploit (2020)
-- Value DeFi attack (2020)
+- bZx 协议攻击（2020）
+- Harvest Finance 漏洞利用（2020）
+- Value DeFi 攻击（2020）
 
-## Mitigation Strategies
+## 缓解策略
 
-### For Users
+### 对于用户
 
-- Be aware of flash loan risks
-- Monitor protocol TVL and activity
-- Use protocols with flash loan protection
+- 了解闪电贷风险
+- 监控协议 TVL 和活动
+- 使用具有闪电贷保护的协议
 
-### For Developers
+### 对于开发者
 
-- Don't rely solely on spot prices
-- Use time-weighted average prices (TWAP)
-- Implement circuit breakers
-- Add delays to critical operations
-- Use multiple price sources
+- 不要仅依赖现货价格
+- 使用时间加权平均价格（TWAP）
+- 实现熔断机制
+- 为关键操作添加延迟
+- 使用多个价格来源
 
-## Code Example
+## 代码示例
 
 ```solidity
-// VULNERABLE: Using spot price
+// 易受攻击：使用现货价格
 uint256 price = oracle.getPrice(token);
 
-// BETTER: Using TWAP
+// 更好：使用 TWAP
 uint256 price = oracle.getTWAP(token, 1 hours);
 ```
-

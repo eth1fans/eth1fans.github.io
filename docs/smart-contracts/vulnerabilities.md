@@ -1,62 +1,61 @@
 ---
-title: Common Vulnerabilities
-parent: Smart Contracts
+title: 常见漏洞
+parent: 智能合约
 nav_order: 1
 ---
 
-# Common Smart Contract Vulnerabilities
+# 智能合约常见漏洞
 
-This section covers the most common vulnerabilities found in smart contracts.
+本节涵盖智能合约中发现的最常见漏洞。
 
-## Reentrancy
+## 重入攻击
 
-Reentrancy attacks occur when a contract calls an external contract before updating its own state.
+重入攻击发生在合约在更新自身状态之前调用外部合约时。
 
-### Example
+### 示例
 
 ```solidity
-// VULNERABLE CODE
+// 易受攻击的代码
 function withdraw() public {
     uint amount = balances[msg.sender];
     (bool success, ) = msg.sender.call{value: amount}("");
     require(success, "Transfer failed");
-    balances[msg.sender] = 0; // State updated after external call
+    balances[msg.sender] = 0; // 在外部调用后更新状态
 }
 ```
 
-### Mitigation
+### 缓解措施
 
-- Use the Checks-Effects-Interactions pattern
-- Implement reentrancy guards
-- Update state before external calls
+- 使用检查-效果-交互模式
+- 实现重入保护
+- 在外部调用之前更新状态
 
-## Integer Overflow/Underflow
+## 整数溢出/下溢
 
-Solidity 0.8.0+ has built-in overflow protection, but older versions require careful handling.
+Solidity 0.8.0+ 具有内置的溢出保护，但旧版本需要仔细处理。
 
-### Mitigation
+### 缓解措施
 
-- Use Solidity 0.8.0 or higher
-- Use SafeMath library for older versions
-- Validate all arithmetic operations
+- 使用 Solidity 0.8.0 或更高版本
+- 对于旧版本使用 SafeMath 库
+- 验证所有算术运算
 
-## Access Control
+## 访问控制
 
-Improper access control can allow unauthorized users to perform critical operations.
+不当的访问控制可能允许未授权用户执行关键操作。
 
-### Mitigation
+### 缓解措施
 
-- Use OpenZeppelin's AccessControl
-- Implement role-based access control
-- Use modifiers for access checks
+- 使用 OpenZeppelin 的 AccessControl
+- 实现基于角色的访问控制
+- 使用修饰符进行访问检查
 
-## Front-Running
+## 抢跑攻击
 
-Transactions are visible in the mempool before being mined, allowing front-running attacks.
+交易在被打包之前会在内存池中可见，允许抢跑攻击。
 
-### Mitigation
+### 缓解措施
 
-- Use commit-reveal schemes
-- Implement slippage protection
-- Use private transaction pools
-
+- 使用提交-揭示方案
+- 实现滑点保护
+- 使用私有交易池

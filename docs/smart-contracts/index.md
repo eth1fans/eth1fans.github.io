@@ -1,27 +1,26 @@
 ---
-title: Smart Contracts
+title: 智能合约
 nav_order: 2
 has_children: true
 ---
 
-# Smart Contract Security
+# 智能合约安全
 
-Smart contracts are the foundation of Web3 applications. Understanding common vulnerabilities and best practices is crucial for building secure decentralized applications.
+智能合约是 Web3 应用的基础。了解常见漏洞和最佳实践对于构建安全的去中心化应用至关重要。
 
-## Common Vulnerabilities
+## 常见漏洞
 
-- Reentrancy attacks
-- Integer overflow/underflow
-- Access control issues
-- Front-running
-- Unchecked external calls
-- Gas limit issues
+- 重入攻击
+- 整数溢出/下溢
+- 访问控制问题
+- 抢跑攻击
+- 未检查的外部调用
+- Gas 限制问题
 
-## Best Practices
+## 最佳实践
 
-- Use established patterns and libraries
-- Implement proper access controls
-- Validate all inputs
-- Handle errors gracefully
-- Test thoroughly before deployment
-
+- 使用成熟的模式和库
+- 实现适当的访问控制
+- 验证所有输入
+- 优雅地处理错误
+- 部署前进行充分测试

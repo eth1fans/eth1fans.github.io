@@ -1,27 +1,26 @@
 ---
-title: DeFi Security
+title: DeFi 安全
 nav_order: 4
 has_children: true
 ---
 
-# DeFi Security
+# DeFi 安全
 
-Decentralized Finance (DeFi) protocols handle billions of dollars. Understanding their security risks is crucial.
+去中心化金融（DeFi）协议处理数十亿美元的资金。理解其安全风险至关重要。
 
-## Key Risks
+## 关键风险
 
-- Smart contract vulnerabilities
-- Oracle manipulation
-- Liquidity risks
-- Governance attacks
-- Flash loan attacks
-- Impermanent loss
+- 智能合约漏洞
+- 预言机操纵
+- 流动性风险
+- 治理攻击
+- 闪电贷攻击
+- 无常损失
 
-## Best Practices
+## 最佳实践
 
-- Research protocols before investing
-- Start with small amounts
-- Understand the risks
-- Monitor protocol updates
-- Use audited protocols when possible
-
+- 投资前研究协议
+- 从小额开始
+- 理解风险
+- 监控协议更新
+- 尽可能使用经过审计的协议

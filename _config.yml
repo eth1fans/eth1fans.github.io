@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Web3 Security
-description: A comprehensive guide to Web3 security best practices, vulnerabilities, and solutions for developers
+title: Web3 安全
+description: Web3 安全最佳实践、漏洞和解决方案的综合指南，面向构建去中心化应用的开发者
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://eth1fans.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: eth1fans/eth1fans.github.io # for github-metadata
@@ -146,7 +146,7 @@ liquid:
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: 'Web3 Security - Helping developers build secure decentralized applications.'
+footer_content: 'Web3 安全 - 帮助开发者构建安全的去中心化应用。'
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter

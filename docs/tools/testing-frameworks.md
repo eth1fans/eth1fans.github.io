@@ -1,32 +1,32 @@
 ---
-title: Testing Frameworks
-parent: Security Tools
+title: 测试框架
+parent: 安全工具
 nav_order: 2
 ---
 
-# Testing Frameworks
+# 测试框架
 
-Comprehensive testing is essential for secure smart contracts.
+全面的测试对于安全的智能合约至关重要。
 
 ## Foundry
 
-Foundry is a fast, portable, and modular toolkit for Ethereum application development.
+Foundry 是一个快速、可移植且模块化的以太坊应用开发工具包。
 
-### Installation
+### 安装
 
 ```bash
 curl -L https://foundry.paradigm.xyz | bash
 foundryup
 ```
 
-### Features
+### 功能
 
-- Fast execution
-- Fuzzing support
-- Gas optimization tools
-- Built-in cheatcodes
+- 快速执行
+- 模糊测试支持
+- Gas 优化工具
+- 内置作弊码
 
-### Example Test
+### 示例测试
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -51,37 +51,36 @@ contract MyContractTest is Test {
 
 ## Hardhat
 
-Hardhat is a development environment for Ethereum software.
+Hardhat 是以太坊软件的开发环境。
 
-### Installation
+### 安装
 
 ```bash
 npm install --save-dev hardhat
 ```
 
-### Features
+### 功能
 
-- Built-in testing framework
-- Network management
-- Plugin ecosystem
-- Debugging tools
+- 内置测试框架
+- 网络管理
+- 插件生态系统
+- 调试工具
 
 ## Truffle
 
-Truffle is a development framework for Ethereum.
+Truffle 是以太坊的开发框架。
 
-### Features
+### 功能
 
-- Testing framework
-- Migration system
-- Asset pipeline
-- Built-in console
+- 测试框架
+- 迁移系统
+- 资产管道
+- 内置控制台
 
-## Best Practices
+## 最佳实践
 
-- Write tests for all functions
-- Test edge cases
-- Use fuzzing for complex logic
-- Test error conditions
-- Aim for >90% code coverage
-
+- 为所有函数编写测试
+- 测试边界情况
+- 对复杂逻辑使用模糊测试
+- 测试错误条件
+- 目标代码覆盖率 > 90%

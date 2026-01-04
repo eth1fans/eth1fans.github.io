@@ -1,26 +1,25 @@
 ---
-title: Wallet Security
+title: 钱包安全
 nav_order: 3
 has_children: true
 ---
 
-# Wallet Security
+# 钱包安全
 
-Securing cryptocurrency wallets and private keys is fundamental to Web3 security.
+保护加密货币钱包和私钥是 Web3 安全的基础。
 
-## Key Topics
+## 关键主题
 
-- Private key management
-- Hardware wallets
-- Multi-signature wallets
-- Social engineering attacks
-- Phishing prevention
+- 私钥管理
+- 硬件钱包
+- 多重签名钱包
+- 社会工程攻击
+- 钓鱼防护
 
-## Best Practices
+## 最佳实践
 
-- Never share your private keys
-- Use hardware wallets for large amounts
-- Enable multi-factor authentication
-- Verify transaction details carefully
-- Keep software updated
-
+- 永远不要分享您的私钥
+- 大额资金使用硬件钱包
+- 启用多因素认证
+- 仔细验证交易详情
+- 保持软件更新

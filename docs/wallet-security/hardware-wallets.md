@@ -1,53 +1,52 @@
 ---
-title: Hardware Wallets
-parent: Wallet Security
+title: 硬件钱包
+parent: 钱包安全
 nav_order: 2
 ---
 
-# Hardware Wallets
+# 硬件钱包
 
-Hardware wallets provide the highest level of security for cryptocurrency storage.
+硬件钱包为加密货币存储提供最高级别的安全性。
 
-## What are Hardware Wallets?
+## 什么是硬件钱包？
 
-Hardware wallets are physical devices that store private keys offline and sign transactions securely.
+硬件钱包是物理设备，离线存储私钥并安全地签署交易。
 
-## Benefits
+## 优势
 
-- **Offline storage**: Private keys never leave the device
-- **Tamper-resistant**: Built-in security features
-- **User-friendly**: Easy to use with proper setup
-- **Multi-currency support**: Most support multiple cryptocurrencies
+- **离线存储**：私钥永远不会离开设备
+- **防篡改**：内置安全功能
+- **用户友好**：正确设置后易于使用
+- **多币种支持**：大多数支持多种加密货币
 
-## Popular Options
+## 热门选择
 
 - Ledger Nano S/X
 - Trezor Model One/T
 - KeepKey
-- Coldcard (Bitcoin-focused)
+- Coldcard（专注于比特币）
 
-## Security Best Practices
+## 安全最佳实践
 
-### Initial Setup
+### 初始设置
 
-- Purchase directly from manufacturer
-- Verify device authenticity
-- Set up PIN code
-- Write down seed phrase securely
-- Test recovery process
+- 直接从制造商购买
+- 验证设备真实性
+- 设置 PIN 码
+- 安全地写下助记词
+- 测试恢复过程
 
-### Daily Use
+### 日常使用
 
-- Verify receiving addresses on device screen
-- Double-check transaction details
-- Keep firmware updated
-- Use official software only
-- Be cautious of phishing attempts
+- 在设备屏幕上验证接收地址
+- 仔细检查交易详情
+- 保持固件更新
+- 仅使用官方软件
+- 警惕钓鱼尝试
 
-## Limitations
+## 局限性
 
-- Physical device can be lost or damaged
-- Requires physical access for transactions
-- Initial cost investment
-- Learning curve for beginners
-
+- 物理设备可能丢失或损坏
+- 交易需要物理访问
+- 初始成本投资
+- 初学者有学习曲线

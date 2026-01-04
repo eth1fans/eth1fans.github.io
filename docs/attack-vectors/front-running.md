@@ -1,38 +1,38 @@
 ---
-title: Front-Running Attacks
-parent: Attack Vectors
+title: 抢跑攻击
+parent: 攻击向量
 nav_order: 2
 ---
 
-# Front-Running Attacks
+# 抢跑攻击
 
-Front-running occurs when an attacker sees a pending transaction and submits their own transaction with higher gas to execute first.
+抢跑发生在攻击者看到待处理的交易并提交自己的交易，使用更高的 gas 价格以首先执行。
 
-## How Front-Running Works
+## 抢跑如何工作
 
-1. Attacker monitors mempool for profitable transactions
-2. Sees a large trade that will move price
-3. Submits transaction with higher gas price
-4. Attacker's transaction executes first
-5. Attacker profits from price movement
+1. 攻击者监控内存池以寻找有利可图的交易
+2. 看到将影响价格的大额交易
+3. 提交具有更高 gas 价格的交易
+4. 攻击者的交易首先执行
+5. 攻击者从价格变动中获利
 
-## Real-World Examples
+## 真实案例
 
-### Uniswap Front-Running
+### Uniswap 抢跑
 
-- Bots monitor large swaps
-- Execute trades before the original transaction
-- Profit from price impact
+- 机器人监控大额交换
+- 在原始交易之前执行交易
+- 从价格影响中获利
 
-### NFT Minting
+### NFT 铸造
 
-- Bots monitor mint transactions
-- Front-run to mint rare NFTs
-- Resell at higher prices
+- 机器人监控铸造交易
+- 抢跑以铸造稀有 NFT
+- 以更高价格转售
 
-## Mitigation Strategies
+## 缓解策略
 
-### Commit-Reveal Scheme
+### 提交-揭示方案
 
 ```solidity
 mapping(address => bytes32) public commitments;
@@ -43,33 +43,32 @@ function commit(bytes32 commitment) public {
 
 function reveal(uint256 value, bytes32 secret) public {
     require(keccak256(abi.encodePacked(value, secret)) == commitments[msg.sender], "Invalid commitment");
-    // Execute transaction
+    // 执行交易
     delete commitments[msg.sender];
 }
 ```
 
-### Slippage Protection
+### 滑点保护
 
 ```solidity
 function swap(uint256 amountIn, uint256 minAmountOut) public {
     uint256 amountOut = calculateSwap(amountIn);
     require(amountOut >= minAmountOut, "Slippage too high");
-    // Execute swap
+    // 执行交换
 }
 ```
 
-### Private Transaction Pools
+### 私有交易池
 
-- Use Flashbots for Ethereum
-- Use private mempools
-- Reduces front-running visibility
+- 以太坊使用 Flashbots
+- 使用私有内存池
+- 减少抢跑可见性
 
-## MEV (Maximal Extractable Value)
+## MEV（最大可提取价值）
 
-Front-running is part of a broader category called MEV, which includes:
-- Front-running
-- Back-running
-- Sandwich attacks
-- Arbitrage
-- Liquidations
-
+抢跑是更广泛类别 MEV 的一部分，包括：
+- 抢跑
+- 后跑
+- 三明治攻击
+- 套利
+- 清算

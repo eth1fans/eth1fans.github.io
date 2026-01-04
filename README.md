@@ -1,99 +1,99 @@
-# Web3 Security
+# Web3 安全
 
-A comprehensive guide to Web3 security best practices, vulnerabilities, and solutions for developers building decentralized applications.
+面向构建去中心化应用的开发者的 Web3 安全最佳实践、漏洞和解决方案综合指南。
 
-## 🌐 Live Site
+## 🌐 在线网站
 
-Visit the guide at: [https://eth1fans.github.io](https://eth1fans.github.io)
+访问指南：[https://eth1fans.github.io](https://eth1fans.github.io)
 
-## 📚 About
+## 📚 关于
 
-The Web3 Security Guide is a community-driven resource dedicated to improving security practices in the Web3 ecosystem. Our goal is to help developers build more secure decentralized applications and protect user funds.
+Web3 安全指南是一个社区驱动的资源，致力于改进 Web3 生态系统中的安全实践。我们的目标是帮助开发者构建更安全的去中心化应用并保护用户资金。
 
-### What's Covered
+### 涵盖内容
 
-- **Smart Contract Security**: Common vulnerabilities like reentrancy, overflow/underflow, and access control issues
-- **Wallet Security**: Best practices for securing cryptocurrency wallets and private keys
-- **DeFi Security**: Understanding risks in decentralized finance protocols
-- **Audit Best Practices**: How to conduct security audits and code reviews
-- **Attack Vectors**: Real-world examples of Web3 attacks and how they were executed
-- **Security Tools**: Tools and resources for testing and securing your applications
+- **智能合约安全**：常见漏洞，如重入攻击、溢出/下溢和访问控制问题
+- **钱包安全**：保护加密货币钱包和私钥的最佳实践
+- **DeFi 安全**：理解去中心化金融协议的风险
+- **审计最佳实践**：如何进行安全审计和代码审查
+- **攻击向量**：Web3 攻击的真实案例及其执行方式
+- **安全工具**：测试和保护应用的工具和资源
 
-## 🚀 Getting Started
+## 🚀 开始使用
 
-This site is built with [Jekyll](https://jekyllrb.com) and uses the [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme.
+本网站使用 [Jekyll](https://jekyllrb.com) 构建，并使用 [Just the Docs](https://just-the-docs.github.io/just-the-docs/) 主题。
 
-### Local Development
+### 本地开发
 
-1. Clone the repository:
+1. 克隆仓库：
    ```bash
    git clone https://github.com/eth1fans/eth1fans.github.io.git
    cd eth1fans.github.io
    ```
 
-2. Install dependencies:
+2. 安装依赖：
    ```bash
    bundle install
    ```
 
-3. Build and serve locally:
+3. 本地构建和运行：
    ```bash
    bundle exec jekyll serve
    ```
 
-4. Open your browser at `http://localhost:4000`
+4. 在浏览器中打开 `http://localhost:4000`
 
-## 🤝 Contributing
+## 🤝 贡献
 
-We welcome contributions! Whether it's adding new content, fixing errors, or improving existing documentation, your help makes this resource better for everyone.
+我们欢迎贡献！无论是添加新内容、修复错误还是改进现有文档，您的帮助都会让这个资源对每个人更好。
 
-### How to Contribute
+### 如何贡献
 
-1. Fork the repository
-2. Create a branch for your changes (`git checkout -b feature/amazing-content`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'feat: add amazing content'`)
-5. Push to the branch (`git push origin feature/amazing-content`)
-6. Open a Pull Request
+1. Fork 仓库
+2. 为您的更改创建分支（`git checkout -b feature/amazing-content`）
+3. 进行更改
+4. 提交更改（`git commit -m 'feat: add amazing content'`）
+5. 推送到分支（`git push origin feature/amazing-content`）
+6. 打开 Pull Request
 
-### Contribution Guidelines
+### 贡献指南
 
-- Follow the existing documentation style
-- Use clear and concise language
-- Include code examples where relevant
-- Add references and links to external resources
-- Ensure all links are working
+- 遵循现有文档风格
+- 使用清晰简洁的语言
+- 在相关位置包含代码示例
+- 添加外部资源的引用和链接
+- 确保所有链接有效
 
-## 📝 Content Structure
+## 📝 内容结构
 
-The documentation is organized into the following sections:
+文档按以下部分组织：
 
-- **Getting Started**: Introduction and overview
-- **Smart Contracts**: Security best practices for smart contract development
-- **Wallets**: Wallet security and key management
-- **DeFi**: Decentralized finance security considerations
-- **Auditing**: Security audit processes and checklists
-- **Attack Vectors**: Common attack patterns and mitigations
-- **Tools**: Security tools and resources
+- **开始使用**：介绍和概述
+- **智能合约**：智能合约开发的安全最佳实践
+- **钱包**：钱包安全和密钥管理
+- **DeFi**：去中心化金融安全注意事项
+- **审计**：安全审计流程和清单
+- **攻击向量**：常见攻击模式和缓解措施
+- **工具**：安全工具和资源
 
-## ⚠️ Disclaimer
+## ⚠️ 免责声明
 
-This guide is for educational purposes only. Always conduct thorough security audits and testing before deploying smart contracts or handling real funds. The authors and contributors are not responsible for any losses resulting from the use of this information.
+本指南仅用于教育目的。在部署智能合约或处理真实资金之前，请始终进行彻底的安全审计和测试。作者和贡献者不对因使用本信息而造成的任何损失负责。
 
-## 📄 License
+## 📄 许可证
 
-This project is open source and available under the [MIT License](LICENSE.txt).
+本项目是开源的，可在 [MIT License](LICENSE.txt) 下使用。
 
-## 🔗 Resources
+## 🔗 资源
 
-- [GitHub Repository](https://github.com/eth1fans/eth1fans.github.io)
-- [Report Issues](https://github.com/eth1fans/eth1fans.github.io/issues)
-- [Security Advisories](https://github.com/eth1fans/eth1fans.github.io/security/advisories)
+- [GitHub 仓库](https://github.com/eth1fans/eth1fans.github.io)
+- [报告问题](https://github.com/eth1fans/eth1fans.github.io/issues)
+- [安全公告](https://github.com/eth1fans/eth1fans.github.io/security/advisories)
 
-## 🙏 Acknowledgments
+## 🙏 致谢
 
-Thank you to all contributors who help make this resource better. Special thanks to the Web3 security community for sharing knowledge and best practices.
+感谢所有帮助改进本资源的贡献者。特别感谢 Web3 安全社区分享知识和最佳实践。
 
 ---
 
-*Built with [Jekyll](https://jekyllrb.com) and [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme.*
+*使用 [Jekyll](https://jekyllrb.com) 和 [Just the Docs](https://just-the-docs.github.io/just-the-docs/) 主题构建。*

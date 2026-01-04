@@ -1,86 +1,86 @@
 ---
-title: Home
+title: 首页
 layout: home
 nav_order: 1
-description: "A comprehensive guide to Web3 security best practices, vulnerabilities, and solutions for developers building decentralized applications."
+description: "Web3 安全最佳实践、漏洞和解决方案的综合指南，面向构建去中心化应用的开发者。"
 permalink: /
 ---
 
-# Web3 Security
+# Web3 安全
 {: .fs-9 }
 
-A comprehensive resource for understanding and implementing security best practices in Web3 development. Learn about common vulnerabilities, attack vectors, and how to build secure decentralized applications.
+理解并实施 Web3 开发中安全最佳实践的综合资源。了解常见漏洞、攻击向量，以及如何构建安全的去中心化应用。
 {: .fs-6 .fw-300 }
 
-[Get Started](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/eth1fans/eth1fans.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
+[开始使用](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[在 GitHub 查看](https://github.com/eth1fans/eth1fans.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 {: .warning }
-> **Important**: This guide is continuously updated with the latest Web3 security research and best practices. Always verify information and stay updated with the latest security advisories.
+> **重要提示**：本指南持续更新最新的 Web3 安全研究和最佳实践。请始终验证信息并关注最新的安全公告。
 
-Web3 security is critical for protecting user funds and ensuring the integrity of decentralized applications. This guide covers essential security topics including smart contract vulnerabilities, wallet security, DeFi risks, and best practices for building secure dApps.
+Web3 安全对于保护用户资金和确保去中心化应用的完整性至关重要。本指南涵盖重要的安全主题，包括智能合约漏洞、钱包安全、DeFi 风险以及构建安全 dApp 的最佳实践。
 
-Whether you're a developer, auditor, or security researcher, this resource provides practical knowledge to help you build and maintain secure Web3 applications.
+无论您是开发者、审计员还是安全研究员，本资源都提供实用知识，帮助您构建和维护安全的 Web3 应用。
 
-## Getting started
+## 开始使用
 
-Welcome to the Web3 Security Guide! This resource is designed to help developers, auditors, and security researchers understand and mitigate security risks in Web3 applications.
+欢迎使用 Web3 安全指南！本资源旨在帮助开发者、审计员和安全研究员理解和缓解 Web3 应用中的安全风险。
 
-### What you'll learn
+### 您将学到什么
 
-- **🔐 Smart Contract Security**: Common vulnerabilities like reentrancy, overflow/underflow, and access control issues
-- **💼 Wallet Security**: Best practices for securing cryptocurrency wallets and private keys
-- **🏦 DeFi Security**: Understanding risks in decentralized finance protocols
-- **🔍 Audit Best Practices**: How to conduct security audits and code reviews
-- **⚔️ Attack Vectors**: Real-world examples of Web3 attacks and how they were executed
-- **🛠️ Security Tools**: Tools and resources for testing and securing your applications
+- **🔐 智能合约安全**：常见漏洞，如重入攻击、溢出/下溢和访问控制问题
+- **💼 钱包安全**：保护加密货币钱包和私钥的最佳实践
+- **🏦 DeFi 安全**：理解去中心化金融协议的风险
+- **🔍 审计最佳实践**：如何进行安全审计和代码审查
+- **⚔️ 攻击向量**：Web3 攻击的真实案例及其执行方式
+- **🛠️ 安全工具**：测试和保护应用的工具和资源
 
-### How to use this guide
+### 如何使用本指南
 
-Navigate through the documentation using the sidebar menu. Each section covers specific security topics with practical examples and code snippets. Whether you're building a new dApp or auditing existing code, this guide provides the knowledge you need.
+使用侧边栏菜单浏览文档。每个部分都涵盖特定的安全主题，并提供实用的示例和代码片段。无论您是在构建新的 dApp 还是审计现有代码，本指南都提供您所需的知识。
 
 {: .note }
-This guide is community-driven and continuously updated. Contributions and feedback are welcome!
+本指南由社区驱动并持续更新。欢迎贡献和反馈！
 
-## About this project
+## 关于本项目
 
-The Web3 Security Guide is a community-driven resource dedicated to improving security practices in the Web3 ecosystem. Our goal is to help developers build more secure decentralized applications and protect user funds.
+Web3 安全指南是一个社区驱动的资源，致力于改进 Web3 生态系统中的安全实践。我们的目标是帮助开发者构建更安全的去中心化应用并保护用户资金。
 
-### Why Web3 Security Matters
+### 为什么 Web3 安全很重要
 
-With billions of dollars locked in smart contracts and DeFi protocols, security is paramount. A single vulnerability can lead to catastrophic losses. This guide aims to educate developers about common pitfalls and best practices.
+由于有数十亿美元锁定在智能合约和 DeFi 协议中，安全至关重要。单个漏洞可能导致灾难性损失。本指南旨在教育开发者了解常见陷阱和最佳实践。
 
-### Contributing
+### 贡献
 
-We welcome contributions! Whether it's adding new content, fixing errors, or improving existing documentation, your help makes this resource better for everyone.
+我们欢迎贡献！无论是添加新内容、修复错误还是改进现有文档，您的帮助都会让这个资源对每个人更好。
 
-To contribute:
-1. 🍴 Fork the repository
-2. 🌿 Create a branch for your changes
-3. 📝 Submit a pull request with a clear description
+贡献方式：
+1. 🍴 Fork 本仓库
+2. 🌿 为您的更改创建分支
+3. 📝 提交带有清晰描述的 Pull Request
 
-### Resources
+### 资源
 
-- [GitHub Repository](https://github.com/eth1fans/eth1fans.github.io)
-- [Report Issues](https://github.com/eth1fans/eth1fans.github.io/issues)
-- [Security Advisories](https://github.com/eth1fans/eth1fans.github.io/security/advisories)
+- [GitHub 仓库](https://github.com/eth1fans/eth1fans.github.io)
+- [报告问题](https://github.com/eth1fans/eth1fans.github.io/issues)
+- [安全公告](https://github.com/eth1fans/eth1fans.github.io/security/advisories)
 
-### Disclaimer
+### 免责声明
 
-This guide is for educational purposes only. Always conduct thorough security audits and testing before deploying smart contracts or handling real funds. The authors and contributors are not responsible for any losses resulting from the use of this information.
-
----
-
-## Quick Links
-
-- [🔓 Smart Contract Vulnerabilities]({% link docs/smart-contracts/vulnerabilities.md %})
-- [✅ Security Best Practices]({% link docs/smart-contracts/best-practices.md %})
-- [📋 Audit Checklist]({% link docs/auditing/checklist.md %})
-- [⚔️ Common Attack Vectors]({% link docs/attack-vectors/index.md %})
-- [🛠️ Security Tools]({% link docs/tools/index.md %})
+本指南仅用于教育目的。在部署智能合约或处理真实资金之前，请始终进行彻底的安全审计和测试。作者和贡献者不对因使用本信息而造成的任何损失负责。
 
 ---
 
-*Last updated: {{ "now" | date: "%B %Y" }}*
+## 快速链接
+
+- [🔓 智能合约漏洞]({% link docs/smart-contracts/vulnerabilities.md %})
+- [✅ 安全最佳实践]({% link docs/smart-contracts/best-practices.md %})
+- [📋 审计清单]({% link docs/auditing/checklist.md %})
+- [⚔️ 常见攻击向量]({% link docs/attack-vectors/index.md %})
+- [🛠️ 安全工具]({% link docs/tools/index.md %})
+
+---
+
+*最后更新：{{ "now" | date: "%Y年%m月" }}*

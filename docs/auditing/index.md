@@ -1,36 +1,35 @@
 ---
-title: Security Auditing
+title: 安全审计
 nav_order: 5
 has_children: true
 ---
 
-# Security Auditing
+# 安全审计
 
-Professional security audits are essential before deploying smart contracts to mainnet.
+在将智能合约部署到主网之前，专业的安全审计是必不可少的。
 
-## Audit Process
+## 审计流程
 
-1. **Preparation**: Prepare documentation and test suite
-2. **Automated Analysis**: Run static and dynamic analysis tools
-3. **Manual Review**: Expert code review
-4. **Testing**: Comprehensive testing including edge cases
-5. **Report**: Detailed findings and recommendations
-6. **Remediation**: Fix identified issues
-7. **Re-audit**: Verify fixes are correct
+1. **准备**：准备文档和测试套件
+2. **自动化分析**：运行静态和动态分析工具
+3. **手动审查**：专家代码审查
+4. **测试**：包括边界情况的全面测试
+5. **报告**：详细的发现和建议
+6. **修复**：修复已识别的问题
+7. **重新审计**：验证修复是否正确
 
-## What Auditors Look For
+## 审计员关注的内容
 
-- Common vulnerabilities
-- Business logic errors
-- Access control issues
-- Gas optimization opportunities
-- Code quality and maintainability
+- 常见漏洞
+- 业务逻辑错误
+- 访问控制问题
+- Gas 优化机会
+- 代码质量和可维护性
 
-## Preparing for an Audit
+## 审计准备
 
-- Complete documentation
-- Comprehensive test suite
-- Clear code comments
-- Known issues list
-- Architecture diagrams
-
+- 完整的文档
+- 全面的测试套件
+- 清晰的代码注释
+- 已知问题列表
+- 架构图

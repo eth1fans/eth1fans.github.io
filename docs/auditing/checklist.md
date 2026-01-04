@@ -1,74 +1,73 @@
 ---
-title: Audit Checklist
-parent: Security Auditing
+title: 审计清单
+parent: 安全审计
 nav_order: 1
 ---
 
-# Security Audit Checklist
+# 安全审计清单
 
-Use this checklist when preparing for or conducting a security audit.
+在准备或进行安全审计时使用此清单。
 
-## Access Control
+## 访问控制
 
-- [ ] Proper role-based access control implemented
-- [ ] Owner functions are protected
-- [ ] No unauthorized access paths
-- [ ] Multi-signature for critical operations
+- [ ] 实现了适当的基于角色的访问控制
+- [ ] 所有者函数受到保护
+- [ ] 没有未授权的访问路径
+- [ ] 关键操作使用多重签名
 
-## Input Validation
+## 输入验证
 
-- [ ] All inputs are validated
-- [ ] Address zero checks
-- [ ] Integer overflow/underflow protection
-- [ ] Array bounds checking
-- [ ] String length limits
+- [ ] 所有输入都经过验证
+- [ ] 地址零检查
+- [ ] 整数溢出/下溢保护
+- [ ] 数组边界检查
+- [ ] 字符串长度限制
 
-## Reentrancy Protection
+## 重入保护
 
-- [ ] Checks-Effects-Interactions pattern followed
-- [ ] Reentrancy guards where needed
-- [ ] External calls after state updates
-- [ ] No recursive call paths
+- [ ] 遵循检查-效果-交互模式
+- [ ] 在需要的地方实现重入保护
+- [ ] 在状态更新后进行外部调用
+- [ ] 没有递归调用路径
 
-## Error Handling
+## 错误处理
 
-- [ ] Proper error messages
-- [ ] Failed transactions revert correctly
-- [ ] No silent failures
-- [ ] Events emitted for important actions
+- [ ] 适当的错误消息
+- [ ] 失败的交易正确回滚
+- [ ] 没有静默失败
+- [ ] 为重要操作发出事件
 
-## Gas Optimization
+## Gas 优化
 
-- [ ] Efficient data structures
-- [ ] Minimal storage operations
-- [ ] Batch operations where possible
-- [ ] Loop optimization
+- [ ] 高效的数据结构
+- [ ] 最少的存储操作
+- [ ] 尽可能使用批量操作
+- [ ] 循环优化
 
-## Upgradeability
+## 可升级性
 
-- [ ] Upgrade mechanism is secure
-- [ ] Storage layout compatibility
-- [ ] Initialization protection
-- [ ] Proxy pattern correctly implemented
+- [ ] 升级机制是安全的
+- [ ] 存储布局兼容性
+- [ ] 初始化保护
+- [ ] 代理模式正确实现
 
-## Oracle Usage
+## 预言机使用
 
-- [ ] Multiple price sources
-- [ ] Stale data detection
-- [ ] Circuit breakers implemented
-- [ ] Price manipulation protection
+- [ ] 多个价格来源
+- [ ] 过时数据检测
+- [ ] 实现熔断机制
+- [ ] 价格操纵保护
 
-## Front-Running Protection
+## 抢跑保护
 
-- [ ] Commit-reveal schemes
-- [ ] Slippage protection
-- [ ] MEV protection mechanisms
+- [ ] 提交-揭示方案
+- [ ] 滑点保护
+- [ ] MEV 保护机制
 
-## Testing
+## 测试
 
-- [ ] Unit tests coverage > 90%
-- [ ] Integration tests
-- [ ] Fuzzing tests
-- [ ] Edge case testing
-- [ ] Gas usage tests
-
+- [ ] 单元测试覆盖率 > 90%
+- [ ] 集成测试
+- [ ] 模糊测试
+- [ ] 边界情况测试
+- [ ] Gas 使用测试

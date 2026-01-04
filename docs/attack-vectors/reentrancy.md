@@ -1,63 +1,62 @@
 ---
-title: Reentrancy Attacks
-parent: Attack Vectors
+title: 重入攻击
+parent: 攻击向量
 nav_order: 1
 ---
 
-# Reentrancy Attacks
+# 重入攻击
 
-Reentrancy is one of the most dangerous vulnerabilities in smart contracts.
+重入是智能合约中最危险的漏洞之一。
 
-## The DAO Attack (2016)
+## DAO 攻击（2016）
 
-The most famous reentrancy attack resulted in the theft of 3.6 million ETH and led to the Ethereum hard fork.
+最著名的重入攻击导致 360 万 ETH 被盗，并导致以太坊硬分叉。
 
-### How It Worked
+### 工作原理
 
-1. Attacker called `splitDAO()` function
-2. Function sent ETH before updating balance
-3. Attacker's fallback function called `splitDAO()` again
-4. Process repeated until funds were drained
+1. 攻击者调用 `splitDAO()` 函数
+2. 函数在更新余额之前发送 ETH
+3. 攻击者的回退函数再次调用 `splitDAO()`
+4. 重复此过程直到资金被耗尽
 
-### Code Pattern
+### 代码模式
 
 ```solidity
-// VULNERABLE CODE
+// 易受攻击的代码
 function withdraw() public {
     uint amount = balances[msg.sender];
-    msg.sender.call.value(amount)(); // External call before state update
-    balances[msg.sender] = 0; // State updated too late
+    msg.sender.call.value(amount)(); // 在状态更新之前的外部调用
+    balances[msg.sender] = 0; // 状态更新太晚
 }
 ```
 
-## Prevention
+## 预防
 
-### Checks-Effects-Interactions Pattern
+### 检查-效果-交互模式
 
 ```solidity
 function withdraw() public {
     uint amount = balances[msg.sender];
-    balances[msg.sender] = 0; // Effects: Update state first
-    (bool success, ) = msg.sender.call{value: amount}(""); // Interactions: External call last
+    balances[msg.sender] = 0; // 效果：首先更新状态
+    (bool success, ) = msg.sender.call{value: amount}(""); // 交互：最后进行外部调用
     require(success, "Transfer failed");
 }
 ```
 
-### Reentrancy Guard
+### 重入保护
 
 ```solidity
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 contract MyContract is ReentrancyGuard {
     function withdraw() public nonReentrant {
-        // Protected function
+        // 受保护的函数
     }
 }
 ```
 
-## Modern Examples
+## 现代案例
 
-- Lendf.me (2020): $25 million stolen
-- BurgerSwap (2021): $7.2 million stolen
-- Fei Protocol (2022): $80 million at risk
-
+- Lendf.me（2020）：被盗 2500 万美元
+- BurgerSwap（2021）：被盗 720 万美元
+- Fei Protocol（2022）：8000 万美元面临风险

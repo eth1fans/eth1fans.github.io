@@ -1,63 +1,62 @@
 ---
-title: Best Practices
-parent: Smart Contracts
+title: 最佳实践
+parent: 智能合约
 nav_order: 2
 ---
 
-# Smart Contract Best Practices
+# 智能合约最佳实践
 
-Follow these best practices to write secure smart contracts.
+遵循这些最佳实践来编写安全的智能合约。
 
-## Code Quality
+## 代码质量
 
-- **Use established patterns**: Leverage battle-tested patterns from OpenZeppelin
-- **Keep it simple**: Complex code is harder to audit and more prone to bugs
-- **Document thoroughly**: Comment complex logic and business rules
-- **Follow style guides**: Use consistent coding style
+- **使用成熟的模式**：利用 OpenZeppelin 中经过实战检验的模式
+- **保持简单**：复杂的代码更难审计，更容易出现错误
+- **充分文档化**：注释复杂的逻辑和业务规则
+- **遵循风格指南**：使用一致的编码风格
 
-## Security Patterns
+## 安全模式
 
-### Checks-Effects-Interactions
+### 检查-效果-交互
 
-Always follow this pattern:
-1. **Checks**: Validate conditions
-2. **Effects**: Update state
-3. **Interactions**: Call external contracts
+始终遵循此模式：
+1. **检查**：验证条件
+2. **效果**：更新状态
+3. **交互**：调用外部合约
 
-### Access Control
+### 访问控制
 
 ```solidity
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MyContract is Ownable {
     function criticalFunction() public onlyOwner {
-        // Only owner can call this
+        // 只有所有者可以调用此函数
     }
 }
 ```
 
-### Input Validation
+### 输入验证
 
 ```solidity
 function transfer(address to, uint256 amount) public {
     require(to != address(0), "Invalid address");
     require(amount > 0, "Amount must be positive");
     require(balances[msg.sender] >= amount, "Insufficient balance");
-    // ... transfer logic
+    // ... 转账逻辑
 }
 ```
 
-## Testing
+## 测试
 
-- Write comprehensive unit tests
-- Use fuzzing tools
-- Perform integration testing
-- Test edge cases and error conditions
+- 编写全面的单元测试
+- 使用模糊测试工具
+- 执行集成测试
+- 测试边界情况和错误条件
 
-## Deployment
+## 部署
 
-- Deploy to testnets first
-- Get professional audits
-- Use upgradeable patterns when necessary
-- Implement pause mechanisms for critical functions
-
+- 首先部署到测试网
+- 进行专业审计
+- 必要时使用可升级模式
+- 为关键功能实现暂停机制

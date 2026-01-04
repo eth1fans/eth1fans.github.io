@@ -1,47 +1,46 @@
 ---
-title: Private Key Management
-parent: Wallet Security
+title: 私钥管理
+parent: 钱包安全
 nav_order: 1
 ---
 
-# Private Key Management
+# 私钥管理
 
-Private keys are the foundation of cryptocurrency security. Losing or exposing them means losing your funds.
+私钥是加密货币安全的基础。丢失或泄露私钥意味着丢失您的资金。
 
-## Key Principles
+## 关键原则
 
-### Never Share Your Private Key
+### 永远不要分享您的私钥
 
-- Private keys should never be shared with anyone
-- Legitimate services will never ask for your private key
-- Be wary of phishing attempts
+- 私钥永远不应该与任何人分享
+- 合法的服务永远不会要求您的私钥
+- 警惕钓鱼尝试
 
-### Secure Storage
+### 安全存储
 
-- **Hardware wallets**: Most secure for long-term storage
-- **Paper wallets**: Offline storage option (handle carefully)
-- **Encrypted storage**: If storing digitally, use strong encryption
+- **硬件钱包**：长期存储最安全
+- **纸钱包**：离线存储选项（小心处理）
+- **加密存储**：如果数字存储，使用强加密
 
-### Backup Strategies
+### 备份策略
 
-- Create multiple secure backups
-- Store backups in different physical locations
-- Test recovery procedures
-- Use seed phrases for wallet recovery
+- 创建多个安全备份
+- 在不同物理位置存储备份
+- 测试恢复程序
+- 使用助记词进行钱包恢复
 
-## Common Mistakes
+## 常见错误
 
-- Storing keys in plain text
-- Taking screenshots of private keys
-- Sending keys via email or messaging
-- Using weak passwords for encrypted wallets
-- Not backing up seed phrases
+- 以明文形式存储密钥
+- 对私钥截图
+- 通过电子邮件或消息发送密钥
+- 为加密钱包使用弱密码
+- 不备份助记词
 
-## Best Practices
+## 最佳实践
 
-1. Use hardware wallets for significant amounts
-2. Generate keys using secure random number generators
-3. Never reuse private keys
-4. Rotate keys periodically if possible
-5. Use multi-signature wallets for shared accounts
-
+1. 大额资金使用硬件钱包
+2. 使用安全的随机数生成器生成密钥
+3. 永远不要重复使用私钥
+4. 如果可能，定期轮换密钥
+5. 共享账户使用多重签名钱包

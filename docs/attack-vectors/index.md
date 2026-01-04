@@ -1,26 +1,25 @@
 ---
-title: Attack Vectors
+title: 攻击向量
 nav_order: 6
 has_children: true
 ---
 
-# Common Attack Vectors
+# 常见攻击向量
 
-Understanding real-world attack vectors helps prevent similar vulnerabilities.
+理解真实世界的攻击向量有助于防止类似的漏洞。
 
-## Categories
+## 类别
 
-- Smart contract exploits
-- Front-running and MEV
-- Social engineering
-- Infrastructure attacks
-- Governance attacks
+- 智能合约漏洞利用
+- 抢跑和 MEV
+- 社会工程
+- 基础设施攻击
+- 治理攻击
 
-## Learning from Past Attacks
+## 从过去的攻击中学习
 
-Studying historical attacks provides valuable insights into:
-- How vulnerabilities are discovered
-- How exploits are executed
-- How to prevent similar issues
-- The importance of security audits
-
+研究历史攻击提供了宝贵的见解：
+- 漏洞是如何被发现的
+- 漏洞利用是如何执行的
+- 如何防止类似问题
+- 安全审计的重要性
